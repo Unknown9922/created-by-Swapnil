@@ -1,98 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-				<meta charset="UTF-8">
-				<title>Swapnil</title>
+  <title>Index</title>
+  <style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.marquee {  
+ overflow: hidden;
+ position: relative;
+ background-color: red;
+ color: #ffffff;
+}
+.marquee p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 8.5;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scroll-left 1s linear infinite;
+ -webkit-animation: scroll-left 1s linear infinite;
+ animation: scroll-left 1s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 84px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
 </head>
-<body backgr"/storage/emulated/0/DCIM/Screenshots/IMG_20211218_234613.jpg">
-				
-  <font color="#e3ff00" size="50" align="middle">
-<p>🎥hd latest games,movie's & webseries🎥</p>
-  <font size="20" color="#06005a" align="middle">
-<p>🎀this website only for limited user's🎀</p>				
-<p>❌do not share this website to another one❌</p>
- <br> <font size="40" align="middle"color="#b900ff">
-<p>100+ movies</p>		
-<p>100+ webseries</p>	
-<p>100+ Android,pc games</p><br>
-<link rel="stylesheet" href="/storage/emulated/0/Download/Animated Text/style.css">
-  <font color="black"align="middle">
-    <p>click for download link</p>
-    <br>
-		<a href="https://youtu.be/I2re2B-AkF8">	<img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211218_234613.jpg" align="middle" width="150">
-		</a>	
-		<a href="https://drive.google.com/file/d/10YnZYL0b6fs3YYhnjvxW25Ia3pshN_s2/view?usp=drivesdk"><img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211218_235632.jpg" align="middle" width="150">
-		</a>
-			<img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211219_014350.jpg" align="middle" width="150"  >	
-				
-			<img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211219_013940.jpg" align="middle"width="150">
-				<img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211219_014639.jpg" align="middle" width="150">
-				<img src="/storage/emulated/0/DCIM/Screenshots/IMG_20211219_014825.jpg" align="middle"width="150">
-				
-			<br>	
-			<p align="middle">720p</p>
-	<a	href="https://youtube.com/shorts/8hfyLvjeUrU?feature=share">		<p>download now</p>
-		 
-						<div class="animated-photo">
-      <div class="line"><img src="/storage/emulated/0/DCIM/Screenshots/Screenshot_2021-12-19-00-00-20-757_com.miui.gallery.jpg" align="middle" width="300"  ></div>
-      <div class="line">SPIDERMAN NO WAY HOME</div>
-      <div class="line">HINDI DUBBED</div>
-      <div class="line"> 💢click here for download 💢	</div>
-    </div>
-				</a>
-				
-		<br>		<font color="#ffa96a" align="middle"></font>
-				<p>👇🤩gta v for Android🤩👇</p>
-	<a href="https://youtu.be/sqvSRk5ZzV4">		<p>✨download now ✨</p>
-				<br>	<div class="animated-photo2">
-      <div class="line"><img src="/storage/emulated/0/DCIM/Camera/SAVE_20211219_020215.jpg"align="middle" width="300"  ></div>
-      <div class="line">GTA V </div>
-      <div class="line">FOR ANDROID</div>
-      <div class="line"> 💢click here for download 💢	</div>
-    </div>
-				</a>
-				
-				<div id="countdown">[the div for countdown timer]</div>
-<a href="file:///storage/emulated/0/html/my%20information.html"<div id="display" style="display:none"><p align="middle">next page</p></div>
-
-
-</a>
-
-
-<script>
-var timeout, interval
-var threshold = 10000;
-var secondsleft = threshold;
-
-window.onload = function() {
-	startschedule();
-}
-
-function startChecking() {
-	secondsleft -= 1000;
-	document.querySelector("#countdown").innerHTML = "Please wait  " + Math.abs((secondsleft / 1000)) + " secs";
-	if (secondsleft == 0) {
-		//document.getElementById("clickme").style.display="";
-		clearInterval(interval);
-		document.querySelector("#countdown").style.display = "none";
-		document.querySelector("#display").style.display = "";
-	}
-}
-
-function startschedule() {
-	clearInterval(interval);
-	secondsleft = threshold;
-	document.querySelector("#countdown").innerHTML = "next pagein " + Math.abs((secondsleft / 1000)) + " secs";
-	interval = setInterval(function() {
-		startChecking();
-	}, 1000)
-}
-
-function resetTimer() {
-	startschedule();
-}
-</script>
-
-				
+<body>
+<div class="marquee">
+<marquee   behavior="scroll" direction="left">  <h1>SOMONU MOBILE</h1></marquee>
+</div>
+  <div class="center">
+   <div class="vertical-center">
+ <button class="button" onclick="window.location.href = 'https://wa.me/message/MUIZ2ZUQ6Y7EE1';">SHOP NOW</button>
+ 
+</div>
 </body>
 </html>
